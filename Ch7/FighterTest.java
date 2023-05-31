@@ -15,7 +15,7 @@ class Fighter extends Unit implements Fightable{
 }
 interface Fightable extends Movable, Attackable {};
 interface Movable{
-    void move(int x, int y);
+    public abstract void move(int x, int y);
 }
 interface Attackable {
     void attack(Unit u);
