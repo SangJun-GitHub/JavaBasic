@@ -29,7 +29,7 @@ class Parent4{
         System.out.println("method2() in Parent4");
     }
 }
-class Child4 extends Parent4 implements MyInterface, MyInterface2{
+class Child4 extends Parent4 implements MyInterface{
     @Override
     public void method1() {
         System.out.println("method1() in Child4");
