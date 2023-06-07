@@ -23,9 +23,8 @@ public class EqualsEx2 {
         Person p1 = new Person(8011081111222L);
         Person p2 = new Person(8011081111222L);
 
-        System.out.println("p1 == p2 :" + (p1 == p2));
+        System.out.println("p1 == p2 : " + (p1 == p2));
         System.out.println("p1.equals(p2) : " + p1.equals(p2));
 
-        String
     }
 }
