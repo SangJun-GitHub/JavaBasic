@@ -8,7 +8,7 @@ import java.util.StringTokenizer;
  */
 public class StringTokenizerEx4 {
     public static void main(String[] args) {
-        String input = "삼십만삼천백십오";
+        String input = "삼십구조이천사백십억오천칠백삼십구만삼천백십오";
         System.out.println(input);
         System.out.println(koreanToNum(input));
     }
