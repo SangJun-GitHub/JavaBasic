@@ -1,6 +1,4 @@
-package Ch12;
-
-import Ch07.DrawShape;
+package Ch12.Enum;
 
 /**
  * Created by Sang Jun Park on 6/26/2023.

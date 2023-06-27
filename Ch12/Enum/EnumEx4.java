@@ -1,4 +1,4 @@
-package Ch12;
+package Ch12.Enum;
 
 /**
  * Created by Sang Jun Park on 6/27/2023.
