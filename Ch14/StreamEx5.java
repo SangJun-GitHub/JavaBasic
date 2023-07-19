@@ -29,5 +29,6 @@ public class StreamEx5 {
         IntStream intStream4 = Stream.of(strArr).mapToInt(String::length);
 
         int count = intStream1.reduce(0, (a,b) -> a + 1);
+        int sum = intStream2.reduce(0, (a,b) -> a + b);
     }
 }
