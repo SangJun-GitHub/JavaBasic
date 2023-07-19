@@ -1,6 +1,7 @@
 package Ch14;
 
 import java.util.Optional;
+import java.util.OptionalInt;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
@@ -28,7 +29,17 @@ public class StreamEx5 {
         IntStream intStream3 = Stream.of(strArr).mapToInt(String::length);
         IntStream intStream4 = Stream.of(strArr).mapToInt(String::length);
 
-        int count = intStream1.reduce(0, (a,b) -> a + 1);
-        int sum = intStream2.reduce(0, (a,b) -> a + b);
+        int count   = intStream1.reduce(0, (a,b) -> a + 1);
+        int sum     = intStream2.reduce(0, (a,b) -> a + b);
+
+        OptionalInt max = intStream3.reduce(Integer::max);
+        //OptionalInt max = intStream3.reduce((a,b) -> a > b ? a : b);
+        OptionalInt min = intStream4.min();
+        //OptionalInt min = intStream4.reduce((a,b) -> a < b ? a : b);
+
+        System.out.println("count   : " + count);
+        System.out.println("sum     : " + sum);
+        System.out.println("max     : " + max.getAsInt());
+        System.out.println("min     : " + min.getAsInt());
     }
 }
