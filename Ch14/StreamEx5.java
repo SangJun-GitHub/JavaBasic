@@ -22,7 +22,7 @@ public class StreamEx5 {
         Optional<String> sWord = Stream.of(strArr).filter(s -> s.charAt(0) == 's').findFirst();
 
         System.out.println("noEmptyStr  = " + noEmptyStr);
-        System.out.println("sWord       = " + sWord);
+        System.out.println("sWord       = " + sWord.get());
 
         IntStream intStream1 = Stream.of(strArr).mapToInt(String::length);
         IntStream intStream2 = Stream.of(strArr).mapToInt(String::length);
