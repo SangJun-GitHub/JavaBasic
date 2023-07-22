@@ -83,12 +83,12 @@ public class StreamEx7 {
         for(Student4 s : femaleStudent)
             System.out.println(s);
 
-        System.out.printf("\n2. Simple Partitioning + Statistics(Number of students)\n");
+        System.out.printf("\n2. Simple Partitioning(By Sex) + Statistics(Number of students)\n");
         Map<Boolean, Long> stuNumBySex = Stream.of(stuArr).collect(partitioningBy(Student4::isMale, counting()));
         System.out.println("Male Student    : " + stuNumBySex.get(true));
         System.out.println("Female Student  : " + stuNumBySex.get(false));
 
-        System.out.printf("\n3. Simple Partitioning + Statistics(Top of students)\n");
+        System.out.printf("\n3. Simple Partitioning(By Sex) + Statistics(Top of students)\n");
         Map<Boolean, Optional<Student4>> topScoreBySex = Stream.of(stuArr)
                 .collect(partitioningBy(Student4::isMale,
                         maxBy(comparing(Student4::getScore))));
