@@ -5,4 +5,7 @@ package Ch15;
  * Github : http://github.com/SangJun-GitHub
  */
 public class IOEx3 {
+    public static void main(String[] args) {
+
+    }
 }
