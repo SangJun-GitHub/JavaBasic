@@ -1,6 +1,7 @@
 package Ch15;
 
 import java.io.FileInputStream;
+import java.io.IOException;
 
 /**
  * Created by Sang Jun Park on 7/30/2023.
@@ -9,7 +10,7 @@ import java.io.FileInputStream;
 
 //java FileViewer.java FileViewer.java
 public class FileViewer {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) throws IOException {
         FileInputStream fis = new FileInputStream(args[0]);
         int data = 0;
 
