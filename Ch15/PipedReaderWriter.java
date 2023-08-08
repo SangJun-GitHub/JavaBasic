@@ -14,6 +14,7 @@ public class PipedReaderWriter {
         InputThread inputThread     = new InputThread("InputThread");
         OutputThread outputThread   = new OutputThread("OutputThread");
 
+        //connect PipedRead to PipedWriter
         inputThread.connect(outputThread.getOutput());
 
         inputThread.start();
