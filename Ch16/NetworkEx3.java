@@ -35,6 +35,8 @@ public class NetworkEx3 {
             System.out.println("getReadTimeout()                    : " + connection.getReadTimeout());
             System.out.println("getURL()                            : " + connection.getURL());
             System.out.println("getUseCaches()                      : " + connection.getUseCaches());
-        }catch(Exception e){}
+        }catch(Exception e){
+            e.printStackTrace();
+        }
     }
 }
