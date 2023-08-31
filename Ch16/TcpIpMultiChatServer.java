@@ -84,7 +84,7 @@ public class TcpIpMultiChatServer {
 
             try{
                 name = in.readUTF();
-                sendToAll("#" + name + " is entered.");
+                sendToAll("#" + name + " is entered in this chat room.");
 
                 clients.put(name, out);
                 System.out.println("Current connected users is " + clients.size() + ".");
@@ -95,7 +95,7 @@ public class TcpIpMultiChatServer {
             } catch (IOException e){
                 e.printStackTrace();
             } finally {
-                sendToAll("#" + name + " leaved.");
+                sendToAll("#" + name + " leaved in this chat room.");
                 clients.remove(name);
                 System.out.println("Disconnected from [" + socket.getInetAddress() + ":" + socket.getPort() + "]");
                 System.out.println("Current connected users is " + clients.size() + ".");
